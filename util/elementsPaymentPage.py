@@ -22,5 +22,4 @@ payment_form_id = "//*[@id='bancard-payment-form']/iframe"
 
 # Buttons
 
-click_on_edit_button_XPATH = "/html/body/div[2]/div/div/div[1]/div/div/button"
 submit_ID = "submitButton"

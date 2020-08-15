@@ -10,5 +10,4 @@ send_gift_card_to_XPATH = "/html/body/div[2]/div/div/div/p[6]"
 
 # Buttons
 
-click_on_edit_button_XPATH = "/html/body/div[2]/div/div/div/div[1]/button"
 confirm_details_button_XPATH = "/html/body/div[2]/div/div/div/div[2]/button"

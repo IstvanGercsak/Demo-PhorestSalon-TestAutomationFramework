@@ -1,7 +1,7 @@
 import logging
 from selenium import webdriver
 import unittest
-import testdata.test_data as testdata
+import testdata.test_data_builder as testdata
 import pages.demoLandingPage as landingPage
 import pages.demoSummaryPage as summaryPage
 import pages.demoPaymentPage as paymentPage

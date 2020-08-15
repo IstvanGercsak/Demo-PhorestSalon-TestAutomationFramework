@@ -7,10 +7,6 @@ def check_url(driver, summary_page_url):
     assert driver.current_url == summary_page_url
 
 
-def click_on_edit(driver):
-    locators.find_by_xpath(driver, elementsSummaryPage.click_on_edit_button_XPATH).click()
-
-
 def check_value_of_gift_card(driver, value):
     value_element = locators.find_by_xpath(driver, elementsSummaryPage.value_of_gift_card_XPATH)
     assert value_element.text == value

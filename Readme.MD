@@ -23,6 +23,9 @@ With keep this in mind I didn't write test cases for field validations and negat
 -  The architecture is following abstraction and modularization so in this way the framework fulfills the 
 main non-functional test characteristics like maintainability and learnability.
 
+![architecture](screenshots/architecture.png)
+
+
 - Page object model (POM)
     - Separate elements in one place
         - In this way if we want to change or maintain element locations, it is easier to change at only one place
@@ -33,6 +36,13 @@ main non-functional test characteristics like maintainability and learnability.
         - With this I could separate the higher level business related steps and the technical lower level commands
     - The pages files contains the technical steps
         - These files are responsible the technical part of the framework, like assertions and locate elements.
+
+- In the test_data.py file I build up test file structure for the customer and the card. 
+In this way it was easier and straightforward to implement test cases.
+
+- The main_runner.py file contains the test cases:
+    I use the built in python unit test runner. It helps to us to build and organize tests and describe prerequisites like
+    set up the webdriver and organize the after events like close and quit the browser.
 
 - Log to follow up the actions during the tests
 
@@ -45,7 +55,7 @@ main non-functional test characteristics like maintainability and learnability.
 I've differentiate 4 main scenario that could cover the functionality of the demo page.
 These tests are End to End tests that are checking the the payment process flow.
 
-- **Scenario:** Pay with a picked amount($50/$100) and send to me
+- **Scenario:** Pay with a picked amount($50 and $100) and send to me
     - I fill the details on the landing page
     - I click on the Checkout button
     - On the Summary page check the details
@@ -108,16 +118,16 @@ at the mail servers with the predefined mail subject or not.
 
 # Report
 
-- I use a third part library called pyunitreport which is using HTMLTestRunner and create html reports and put it into the reports folder
+- I use a third party library called pyunitreport which is using HTMLTestRunner and create html reports and put it into the reports folder
 - The test runner is creating new report after each run
 - The report contains: running times, test names, duration, test status,
-![link](screenshots/test_result_page.png)
+![report](screenshots/test_result_page.png)
 
 # Log
 
 - I use built in a logging folder where I could uniquely customize the logging format.
 - The log is automatically updates itself after each run
-![link](screenshots/test_log.png)
+![log](screenshots/test_log.png)
 
 # Technical stack
 
@@ -155,9 +165,10 @@ I use Selenium Webdriver to automate the GUI part of the demo.
 
 In some cases if we want to increase the confidence we can expand the test suites with new tests that are 
 empathize strictly the UI parts like:
-    - Placeholders
-    - Checking input formats
-    - Checking required fields
-    - Checking whether the software is working correctly and the all the elements are available in smaller resolution 
+   - Placeholders
+   - Checking input formats
+   - Checking required fields
+   - Checking whether the software is working correctly and the all the elements are available in smaller resolution 
     as well like on mobile or tablet resolution
+   - Checking the Edit function which bring us back to the landing page with the given details
     
