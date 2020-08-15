@@ -114,7 +114,15 @@ at the mail servers with the predefined mail subject or not.
 
 # Bug
 
-- I didn't find any bug
+I didn't get back "required" notification even if the required field are empty:
+    - First name
+    - Last name
+    - Message to recipient
+
+- I get back this message if write too long Message for recipient:
+    - "translation missing: en-US.REGULAR.checkout.message.error.maxCharacter"
+
+- After I submit an empty payment form there is not required field for Security code
 
 # Report
 
