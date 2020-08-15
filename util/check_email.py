@@ -3,6 +3,7 @@ from mailosaur.models import SearchCriteria
 import logging
 from time import sleep
 
+# Connect to my mailing server
 client = MailosaurClient("Og76hkjJXz189ll")
 
 # Configuring logging level and webdriver path
@@ -23,13 +24,15 @@ def check_emails_arrives(customer_email, recipient_email):
     criteria_for_recipient.sent_to = recipient_email
 
     # Wait for the message (by default only looks for messages received in the last hour)
+    # prvnbtvf is the mailing server name for the costumer emails
+    # ylz3dti2 is the mailing server name for the recipient emails
     test_email = client.messages.get("prvnbtvf", criteria_for_customer)
     test_email_recipient = client.messages.get("ylz3dti2", criteria_for_recipient)
 
     # Wait for the email to be arrived
     sleep(10)
-    # Assert that the email subject is what we expect
 
+    # Assert that the email subject is what we expect
     logging.info("Receipt email subject: " + test_email.subject)
     logging.info("Gift card email subject: " + test_email_recipient.subject)
     assert "Your Receipt for Arden Courts" == test_email.subject

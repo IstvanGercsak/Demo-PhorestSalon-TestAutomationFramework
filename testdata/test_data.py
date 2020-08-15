@@ -1,4 +1,6 @@
 # Test data
+
+# Instantiate Card class
 class Card:
     def __init__(self, cardholder_name, zip_code, card_number, valid_til, cvc):
         self.cardholder_name = cardholder_name
@@ -8,6 +10,7 @@ class Card:
         self.cvc = cvc
 
 
+# Instantiate Customer class
 class Customer:
     def __init__(self, email_address, first_name, last_name):
         self.email_address = email_address

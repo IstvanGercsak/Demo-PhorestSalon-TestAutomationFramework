@@ -4,3 +4,35 @@
 08/15/2020 07:55:01 PM: INFO: test_pay_50_for_me (__main__.Test) 
 08/15/2020 07:55:11 PM: INFO: Your gift card code is: 46525491 
 08/15/2020 07:55:11 PM: INFO: Your gift card value is: $50 
+08/15/2020 09:07:31 PM: INFO: ============================TEST============================ 
+08/15/2020 09:07:31 PM: INFO: URL: https://gift-cards.phorest.com/salons/demo-us# 
+08/15/2020 09:07:31 PM: INFO: Title: Buy a Gift Card 
+08/15/2020 09:07:31 PM: INFO: test_pay_100_for_me (__main__.Test) 
+08/15/2020 09:07:40 PM: INFO: Your gift card code is: 54953846 
+08/15/2020 09:07:40 PM: INFO: Your gift card value is: $100 
+08/15/2020 09:07:47 PM: INFO: ============================TEST============================ 
+08/15/2020 09:07:47 PM: INFO: URL: https://gift-cards.phorest.com/salons/demo-us# 
+08/15/2020 09:07:47 PM: INFO: Title: Buy a Gift Card 
+08/15/2020 09:07:47 PM: INFO: test_pay_150_for_someone_else (__main__.Test) 
+08/15/2020 09:07:57 PM: INFO: Your gift card code is: 19104349 
+08/15/2020 09:07:58 PM: INFO: Your gift card value is: $150 
+08/15/2020 09:08:05 PM: INFO: ============================TEST============================ 
+08/15/2020 09:08:05 PM: INFO: URL: https://gift-cards.phorest.com/salons/demo-us# 
+08/15/2020 09:08:05 PM: INFO: Title: Buy a Gift Card 
+08/15/2020 09:08:05 PM: INFO: test_pay_50_for_me (__main__.Test) 
+08/15/2020 09:08:15 PM: INFO: Your gift card code is: 14926500 
+08/15/2020 09:08:15 PM: INFO: Your gift card value is: $50 
+08/15/2020 09:08:22 PM: INFO: ============================TEST============================ 
+08/15/2020 09:08:22 PM: INFO: URL: https://gift-cards.phorest.com/salons/demo-us# 
+08/15/2020 09:08:22 PM: INFO: Title: Buy a Gift Card 
+08/15/2020 09:08:22 PM: INFO: test_pay_for_me_other_amount (__main__.Test) 
+08/15/2020 09:08:32 PM: INFO: Your gift card code is: 20794026 
+08/15/2020 09:08:32 PM: INFO: Your gift card value is: $256 
+08/15/2020 09:08:39 PM: INFO: ============================TEST============================ 
+08/15/2020 09:08:39 PM: INFO: URL: https://gift-cards.phorest.com/salons/demo-us# 
+08/15/2020 09:08:39 PM: INFO: Title: Buy a Gift Card 
+08/15/2020 09:08:39 PM: INFO: test_pay_other_amount_for_someone_else_and_check_email_was_sent (__main__.Test) 
+08/15/2020 09:08:49 PM: INFO: Your gift card code is: 17912279 
+08/15/2020 09:08:49 PM: INFO: Your gift card value is: $256 
+08/15/2020 09:09:02 PM: INFO: Receipt email subject: Your Receipt for Arden Courts 
+08/15/2020 09:09:02 PM: INFO: Gift card email subject: You've been sent a $256 gift card for Demo US! 
