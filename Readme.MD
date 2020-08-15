@@ -114,7 +114,7 @@ at the mail servers with the predefined mail subject or not.
 
 # Bug
 
-I didn't get back "required" notification even if the required field are empty:
+- I didn't get back "required" notification even if the required field are empty:
     - First name
     - Last name
     - Message to recipient
