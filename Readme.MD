@@ -1,13 +1,14 @@
 # Test automation framework for Phorest salon software demo
 
-I've built this test automation framework to demonstrate my knowledge and profession about how to build a test automation framework
-using Python with selenium. The framework contains logging and reporting functions.
+I've built this test automation framework to demonstrate my knowledge and profession about how to build and set up a solid test automation framework
+from scratch using Python with Selenium WebDriver that is easy to maintain and expand. The framework contains logging and reporting functions as well.
 
 ## What kind of tests did I write?
 
  - I write test cases as it would be used as test automation regression pack.
-I think to use test automation is not to find new bugs but get confidence about the working of the software
-With keep this in mind I didn't write test cases for field validations and negative tests.
+I think the main purpose to use test automation is not to find new bugs but get confidence about the working of the software. 
+Instead of finding new bugs the main goal is to cover the main E2E process flow and ensure that it is working correctly.
+With keep this in mind I didn't write test cases for field validations and negative tests, etc.
 
 ## Problem that I have to solve
 
@@ -25,20 +26,24 @@ main non-functional test characteristics like maintainability and learnability.
 
 ![architecture](screenshots/architecture.png)
 
+**Page Object Model POM:** 
+ - Page Object Model (POM) is a design pattern, popularly used in test automation that creates Object Repository 
+    for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance
 
-- Page object model (POM)
+
+- Page object model (POM) design:
     - Separate elements in one place
         - In this way if we want to change or maintain element locations, it is easier to change at only one place
     - Separate locators in one place
         - With these locators there is an additional explicit wait. I use this approach in order to avoid code duplications
         and maintain easier code readability
-    - The test contain only abstract non-technical steps
+    - The tests contain only abstract non-technical steps
         - With this I could separate the higher level business related steps and the technical lower level commands
     - The pages files contains the technical steps
         - These files are responsible the technical part of the framework, like assertions and locate elements.
 
 - In the test_data.py file I build up test file structure for the customer and the card. 
-In this way it was easier and straightforward to implement test cases.
+In this way it was easier and straightforward to implement test cases and create test data.
 
 - The main_runner.py file contains the test cases:
     I use the built in python unit test runner. It helps to us to build and organize tests and describe prerequisites like
@@ -52,10 +57,10 @@ In this way it was easier and straightforward to implement test cases.
 
 # Scenarios
 
-I've differentiate 4 main scenario that could cover the functionality of the demo page.
+I've differentiate 5 main scenario that could cover the functionality of the demo page.
 These tests are End to End tests that are checking the the payment process flow.
 
-- **Scenario:** Pay with a picked amount($50 and $100) and send to me
+- **Scenario 1 and 2:** Pay with a picked amount($50 and $100) and send to me
     - I fill the details on the landing page
     - I click on the Checkout button
     - On the Summary page check the details
@@ -67,7 +72,7 @@ These tests are End to End tests that are checking the the payment process flow.
     - I arrive on the landing page
     
     
-- **Scenario:** Pay with a picked amount($150) and send to someone else
+- **Scenario 3:** Pay with a picked amount($150) and send to someone else
     - I fill the details on the landing page
     - I click on the Checkout button
     - On the Summary page check the details
@@ -78,7 +83,7 @@ These tests are End to End tests that are checking the the payment process flow.
     - I click on the Done button
     - I arrive on the landing page
 
-- **Scenario:** Pay with other amount ($256) and send to me
+- **Scenario 4:** Pay with other amount ($256) and send to me
     - I fill the details on the landing page with other amount
     - I click on the Checkout button
     - On the Summary page check the details
@@ -89,7 +94,7 @@ These tests are End to End tests that are checking the the payment process flow.
     - I click on the Done button
     - I arrive on the landing page
     
-- **Scenario:** Pay with other amount ($256) and send to someone else and check emails
+- **Scenario 5:** Pay with other amount ($256) and send to someone else and check emails
     - I fill the details on the landing page with other amount and send it to someone else
     - I click on the Checkout button
     - On the Summary page check the details
@@ -102,8 +107,8 @@ These tests are End to End tests that are checking the the payment process flow.
 
 ## Checking emails arrives
 
- - Mailosaur: [link](http://mailosaur.com/)
-    - Mailosaur is email testing software that lets you capture and test email, helping you build, test and present your product.
+Mailosaur: [link](http://mailosaur.com/)
+ - Mailosaur is email testing software that lets you capture and test email, helping you build, test and present your product.
     It has a 14 days of free trial version
 
 I use this functionality only in the last (5.) test scenario because I get two emails at the same time if the recipient and the buyer is the same.
@@ -122,7 +127,7 @@ at the mail servers with the predefined mail subject or not.
 - I get back this message if write too long Message for recipient:
     - "translation missing: en-US.REGULAR.checkout.message.error.maxCharacter"
 
-- After I submit an empty payment form there is not required field for Security code
+- After I submit an empty payment form, in the case of the Security code I didn't get back "field required" notification
 
 # Report
 
@@ -139,7 +144,7 @@ at the mail servers with the predefined mail subject or not.
 
 # Technical stack
 
-- IntelliJ PyCharm development environment
+- IntelliJ PyCharm IDE
 - Python 3.8
 - Selenium webdriver
 - Git and Github for version controlling

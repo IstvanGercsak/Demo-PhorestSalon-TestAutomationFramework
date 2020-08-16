@@ -9,7 +9,7 @@ import pages.demoConfirmPage as confirmPage
 import util.check_email as check_email
 from pyunitreport import HTMLTestRunner
 
-# Configuring logging level and webdriver path
+# Configuring logging level and details
 logging.basicConfig(
     filename="log/test_log.log",
     level=logging.INFO,
