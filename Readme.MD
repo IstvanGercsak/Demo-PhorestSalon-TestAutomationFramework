@@ -149,7 +149,7 @@ at the mail servers with the predefined mail subject or not.
 - Selenium webdriver
 - Git and Github for version controlling
 - Third party libraries (selenium, pyunitreport, mailosaur)
-- Third party software (Milosaur)
+- Third party software (Mailosaur)
 
 ## Selenium webdriver
 
